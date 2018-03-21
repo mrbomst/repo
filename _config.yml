@@ -1,38 +1,64 @@
-<<<<<<< HEAD
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
+# Harmony Jekyll theme general configurations 
 
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
-description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+# Base URL
+baseurl: /harmony
 
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
+# Site live URL
+url: http://gayan.me
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Localhost 
+# url: http://127.0.0.1:4000  
 
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Harmony
+  # Little description about your site
+  description: Harmony is free responsive jekyll theme.
+  # 'meta_description:' Write an awesome description for your new site here.
+  # It will appear in your document head meta (for Google search results) and 
+  # in your feed.xml site description.
+  meta_description: > # 
+   Harmony is a free responsive jekyll theme by Gayan Virajith
+   and Maheshika Lakmali. Sourced on Github - 
+   https://github.com/gayanvirajith/harmony
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Gayan Virajith
+    email: gayanvirajith@gmail.com
+    url: http://gayanvirajith.github.io
 
-social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
-=======
-theme: jekyll-theme-cayman
->>>>>>> f2dd016e794f68141b3b37dd4e05aca475012f5a
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: gayanvirajith
+    twitter: gayanvirajith
+    facebook: gayanvirajith
+    gplus: +GayanVirajith
+    dribble: gayan
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings 
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments 
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
