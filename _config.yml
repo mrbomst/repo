@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
@@ -32,3 +33,6 @@ social:
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
     url: 
+=======
+theme: jekyll-theme-cayman
+>>>>>>> f2dd016e794f68141b3b37dd4e05aca475012f5a
