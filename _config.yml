@@ -50,8 +50,8 @@ social:
     url: http://facebook.com/theanhst92
   - title: Paypal
     url: http://paypal.me/theanhst92/2
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/mrbomst
 
